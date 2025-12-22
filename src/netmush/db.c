@@ -1696,6 +1696,10 @@ ATTR *atr_num(int anum)
         {
             log_write_raw(1, "No attribute defined for %d.\n", anum);
         }
+        else
+        {
+            log_write_raw(1, "Attribute found for %d.\n", anum);
+        }
         return anum_get(anum);
     }
 
