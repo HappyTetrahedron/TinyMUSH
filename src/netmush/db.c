@@ -1692,6 +1692,10 @@ ATTR *atr_num(int anum)
      */
     if (anum < A_USER_START)
     {
+        if (!anum_get(anum))
+        {
+            log_write_raw(1, "No attribute defined for %d.\n", anum);
+        }
         return anum_get(anum);
     }
 
