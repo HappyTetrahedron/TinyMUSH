@@ -544,6 +544,7 @@ BOOLEXP *test_atr(char *s, dbref parse_player)
 		 */
 		if (!God(parse_player))
 		{
+            log_write_raw(1, "Aborting attribute read because you are not god \n");
 			XFREE(buff);
 			return ((BOOLEXP *)NULL);
 		}
@@ -555,6 +556,7 @@ BOOLEXP *test_atr(char *s, dbref parse_player)
 
 		if (*s1)
 		{
+            log_write_raw(1, "Aborting attribute read for reasons  \n");
 			XFREE(buff);
 			return ((BOOLEXP *)NULL);
 		}
@@ -573,6 +575,7 @@ BOOLEXP *test_atr(char *s, dbref parse_player)
 		}
 
 		anum = (int)temp;
+        log_write_raw(1, "Parsed attribute number %d\n", anum);
 	}
 	else
 	{
