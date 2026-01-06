@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['file_20is_20outdated_20and_20will_20be_20updated_20in_20the_20future_20center_0',['FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE center',['../md_docs_2Historical_2CONVERTING.html',1,'&lt;center&gt;WARNING&lt;br&gt;&lt;br&gt;THIS FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE&lt;/center&gt;'],['../md_docs_2Historical_2FAQ.html',1,'&lt;center&gt;WARNING&lt;br&gt;&lt;br&gt;THIS FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE&lt;/center&gt;'],['../md_docs_2Historical_2MODULES.html',1,'&lt;center&gt;WARNING&lt;br&gt;&lt;br&gt;THIS FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE&lt;/center&gt;']]],
+  ['for_20tinymush_20modules_1',['Skeleton Module - Complete Template for TinyMUSH Modules',['../md_src_2modules_2skeleton_2README.html',1,'']]],
+  ['future_20center_2',['FUTURE center',['../md_docs_2Historical_2CONVERTING.html',1,'&lt;center&gt;WARNING&lt;br&gt;&lt;br&gt;THIS FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE&lt;/center&gt;'],['../md_docs_2Historical_2FAQ.html',1,'&lt;center&gt;WARNING&lt;br&gt;&lt;br&gt;THIS FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE&lt;/center&gt;'],['../md_docs_2Historical_2MODULES.html',1,'&lt;center&gt;WARNING&lt;br&gt;&lt;br&gt;THIS FILE IS OUTDATED AND WILL BE UPDATED IN THE FUTURE&lt;/center&gt;']]]
+];
