@@ -970,7 +970,9 @@ void process_cmdent(CMDENT *cmdp, char *switchp, dbref player, dbref cause, bool
 		{
 			buf1 = bp = XMALLOC(LBUF_SIZE, "buf1");
 			str = arg;
+		    log_write_raw(1, "Evaluating command expression: %s\n", arg);
 			eval_expression_string(buf1, &bp, player, cause, cause, interp | EV_FCHECK | EV_TOP, &str, cargs, ncargs);
+		    log_write_raw(1, "Evaluated command expression: %s\n", buf1);
 		}
 		else
 		{
@@ -979,11 +981,13 @@ void process_cmdent(CMDENT *cmdp, char *switchp, dbref player, dbref cause, bool
 		/* Call the correct handler */
 		if (cmdp->callseq & CS_CMDARG)
 		{
+		    log_write_raw(1, "Dispatch case 1: %s\n", buf1);
 			handler_cs_one_args_cmdargs = cmdp->info.handler;
 			(*(handler_cs_one_args_cmdargs))(player, cause, key, buf1, cargs, ncargs);
 		}
 		else
 		{
+		    log_write_raw(1, "Dispatch else case\n", buf1);
 			if (cmdp->callseq & CS_ADDED)
 			{
 				preserve = save_global_regs("process_cmdent_added");
@@ -1130,6 +1134,7 @@ void process_cmdent(CMDENT *cmdp, char *switchp, dbref player, dbref cause, bool
 			}
 			else
 			{
+		        log_write_raw(1, "Dispatch case 2: %s\n", buf1);
 				handler_cs_one_args = cmdp->info.handler;
 				(*handler_cs_one_args)(player, cause, key, buf1);
 			}
